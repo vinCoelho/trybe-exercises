@@ -9,3 +9,9 @@ const heigth = 8;
 const area = base * heigth;
 
 console.log('Área do retângulo: ' + area);
+
+// calculando o perímetro
+
+const perimeter = base + heigth + base + heigth;
+
+console.log('Perímetro do retângulo: ' + perimeter);
