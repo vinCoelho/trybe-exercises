@@ -19,3 +19,11 @@ console.log(birthYear);
 birthYear = 2030;
 
 console.log(birthYear);
+
+// alterando (tentando) valor atribuído à constante birthCity
+
+birthCity = 'Curitiba';
+
+console.log(birthCity);
+
+// Erro acontece porque não é possível alterar o valor atribuído a uma constante (const)
