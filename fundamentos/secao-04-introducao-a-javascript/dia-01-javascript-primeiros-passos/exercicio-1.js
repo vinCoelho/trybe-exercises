@@ -73,3 +73,77 @@ if ((ang1 + ang2 + ang3) == 180) {
 } else {
   console.log('false');
 }
+
+// Utilize switch/case para fazer um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+
+// Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
+
+// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+
+// Exemplo: bishop (bispo) -> diagonals (diagonais)
+
+let xadrez = 'Cavalo';
+
+switch (xadrez.toLowerCase()) {
+  case "peão":
+    console.log('O peão se move para frente, uma casa por vez.')
+    break;
+
+  case "bispo":
+    console.log('O bispo se move em diagonais.')
+    break;
+
+  case "torre":
+    console.log('A torre se move tanto para frente quanto para os lados, múltiplas casas por vez.')
+    break;
+
+  case "rei":
+    console.log('O rei pode mover-se em qualquer direção, porém apenas uma casa por vez.')
+    break;
+
+  case "dama":
+    console.log('A rainha pode mover-se em qualquer direção (vertical, horizontal e diagonal), porém quantas casas quiser, desde que estejam livres.')
+    break;
+  
+  case "cavalo":
+    console.log('É a única peça que pode saltar sobre as outras peças do tabuleiro, sejam elas amigas ou inimigas. O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L”. Ele pode andar duas casas na horizontal e uma na vertical, ou duas na vertical e uma na horizontal, uma na horizontal e duas na vertical, e assim por diante. Quando a casa de saída do Cavalo for escura, a casa de chegada será clara, e vice-versa.')
+    break;
+
+  default:
+    console.log('Peça não identificada.')
+}
+
+// Utilize if/else para fazer um programa que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+const porcentagem = 40;
+let nota;
+
+if (porcentagem >= 90) {
+  nota = 'A';
+  console.log('Nota: ' + nota);
+} else if (porcentagem >= 80) {
+  nota = 'B';
+  console.log('Nota: ' + nota);
+} else if (porcentagem >= 70) {
+  nota = 'C';
+  console.log('Nota: ' + nota);
+} else if (porcentagem >= 60) {
+  nota = 'D';
+  console.log('Nota: ' + nota);
+} else if (porcentagem >= 50) {
+  nota = 'B';
+  console.log('Nota: ' + nota);
+} else if (porcentagem > 100 || porcentagem < 0) {
+  console.log('Erro: valor de nota inválido');
+} else {
+  nota = 'F';
+  console.log('Nota: ' + nota);
+}
