@@ -147,3 +147,26 @@ if (porcentagem >= 90) {
   nota = 'F';
   console.log('Nota: ' + nota);
 }
+
+// Há um par entre nós
+// Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+// Bonus: use somente um if.
+
+const numer1 = 2;
+const numer2 = 13;
+const numer3 = 4;
+
+if (numer1 % 2 === 0 || numer2 % 2 === 0 || numer3 % 2 === 0) {
+  console.log('true');
+} else {
+  console.log('false');
+}
+
+// Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
+// Bonus: use somente um if.
+
+if (numer1 % 2 !== 0 || numer2 % 2 !== 0 || numer3 % 2 !== 0) {
+  console.log('true');
+} else {
+  console.log('false');
+}
