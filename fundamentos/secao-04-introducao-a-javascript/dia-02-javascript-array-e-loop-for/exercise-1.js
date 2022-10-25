@@ -41,3 +41,16 @@ if (avarage > 20) {
 } else {
     console.log('valor menor ou igual a 20');
 }
+
+// Utilizando for, descubra qual o maior valor contido no array e imprima-o;
+
+let maiorValor = 0;
+
+for (index = 0; index < numbers.length; index += 1) {
+    if (maiorValor < numbers[index]) {
+        maiorValor = numbers[index];
+    }
+}
+
+console.log('');
+console.log('O maior valor do array é o: ' + maiorValor)
