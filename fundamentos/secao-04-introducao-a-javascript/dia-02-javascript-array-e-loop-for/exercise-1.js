@@ -4,9 +4,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
-for (let index = 0; index < numbers.length; index += 1) {
-    console.log(numbers[index]);
-}
+console.log(numbers);
 
 // Some todos os valores contidos no array e imprima o resultado;
 
@@ -85,3 +83,14 @@ for (index = 0; index < numbers.length; index += 1) {
 
 console.log('');
 console.log('O menor valor do array é o: ' + menorValor)
+
+// Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+let array = [];
+
+for (index = 1; index <= 25; index += 1) {
+    array.push(index);
+}
+
+console.log('Criando array de 1 a 25 utilizando o for:');
+console.log(array);
