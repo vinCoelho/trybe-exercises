@@ -23,11 +23,21 @@ console.log('A soma de todos os valores do array é: ' + sum);
 
 // A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos.
 
-let average = 0;
+let sum2 = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-    average = average + numbers[index];
+    sum2 = sum2 + numbers[index];
 }
 
+let avarage = sum2 / numbers.length;
+
 console.log('');
-console.log('A média aritmética dos valores do array é: ' + (average / numbers.length));
+console.log('A média aritmética dos valores do array é: ' + avarage);
+
+// Com base no código que acabou de gerar, faça com que, caso o valor final seja maior que 20, imprima a mensagem: “valor maior que 20”. Caso não seja, imprima a mensagem: “valor menor ou igual a 20”;
+
+if (avarage > 20) {
+    console.log('valor maior que 20');
+} else {
+    console.log('valor menor ou igual a 20');
+}
