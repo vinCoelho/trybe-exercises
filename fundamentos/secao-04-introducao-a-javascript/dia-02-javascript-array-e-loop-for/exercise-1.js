@@ -54,3 +54,21 @@ for (index = 0; index < numbers.length; index += 1) {
 
 console.log('');
 console.log('O maior valor do array é o: ' + maiorValor)
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+
+let oddNumbers = 0;
+
+for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        oddNumbers += 1;
+    }
+}
+
+console.log('');
+
+if (oddNumbers > 0) {
+    console.log('Foram encontrados ' + oddNumbers + ' valores ímpares no array.')
+} else {
+    console.log('nenhum valor ímpar encontrado')
+}
