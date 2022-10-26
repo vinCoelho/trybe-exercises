@@ -11,7 +11,7 @@ console.log(numbers);
 let sum = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-    sum = sum + numbers[index];
+	sum = sum + numbers[index];
 }
 
 console.log('');
@@ -24,9 +24,9 @@ console.log('A soma de todos os valores do array é: ' + sum);
 let sum2 = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-    sum2 = sum2 + numbers[index];
+	sum2 = sum2 + numbers[index];
 }
-
+ß
 let avarage = sum2 / numbers.length;
 
 console.log('');
@@ -35,9 +35,9 @@ console.log('A média aritmética dos valores do array é: ' + avarage);
 // Com base no código que acabou de gerar, faça com que, caso o valor final seja maior que 20, imprima a mensagem: “valor maior que 20”. Caso não seja, imprima a mensagem: “valor menor ou igual a 20”;
 
 if (avarage > 20) {
-    console.log('valor maior que 20');
+	console.log('valor maior que 20');
 } else {
-    console.log('valor menor ou igual a 20');
+	console.log('valor menor ou igual a 20');
 }
 
 // Utilizando for, descubra qual o maior valor contido no array e imprima-o;
@@ -45,9 +45,9 @@ if (avarage > 20) {
 let maiorValor = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    if (maiorValor < numbers[index]) {
-        maiorValor = numbers[index];
-    }
+	if (maiorValor < numbers[index]) {
+		maiorValor = numbers[index];
+	}
 }
 
 console.log('');
@@ -58,17 +58,17 @@ console.log('O maior valor do array é o: ' + maiorValor)
 let oddNumbers = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        oddNumbers += 1;
-    }
+	if (numbers[index] % 2 !== 0) {
+		oddNumbers += 1;
+	}
 }
 
 console.log('');
 
 if (oddNumbers > 0) {
-    console.log('Foram encontrados ' + oddNumbers + ' valores ímpares no array.')
+	console.log('Foram encontrados ' + oddNumbers + ' valores ímpares no array.')
 } else {
-    console.log('nenhum valor ímpar encontrado')
+	console.log('nenhum valor ímpar encontrado')
 }
 
 // Utilizando for, descubra qual o menor valor contido no array e imprima-o;
@@ -76,9 +76,9 @@ if (oddNumbers > 0) {
 let menorValor = maiorValor;
 
 for (index = 0; index < numbers.length; index += 1) {
-    if (menorValor > numbers[index]) {
-        menorValor = numbers[index];
-    }
+	if (menorValor > numbers[index]) {
+		menorValor = numbers[index];
+	}
 }
 
 console.log('');
@@ -89,7 +89,7 @@ console.log('O menor valor do array é o: ' + menorValor)
 let array = [];
 
 for (index = 1; index <= 25; index += 1) {
-    array.push(index);
+	array.push(index);
 }
 
 console.log('Criando array de 1 a 25 utilizando o for:');
@@ -98,5 +98,5 @@ console.log(array);
 // Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
 
 for (index = 0; index < array.length; index += 1) {
-    console.log((index + 1) + ' dividido por 2 é igual a: ' + (array[index] / 2));
+	console.log((index + 1) + ' dividido por 2 é igual a: ' + (array[index] / 2));
 }
